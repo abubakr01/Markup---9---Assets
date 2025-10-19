@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    place-content: center;
+    height: 100vh;
+    background-color: burlywood;
+    padding: 50px 220px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr ;
+    max-width: 100%;
+}
+
+.wallet_section{
+    padding: 30px;  
+    background-color: rgb(207, 202, 194); 
+    overflow: auto;
+    scrollbar-color: rgb(207, 202, 194) rgb(207, 202, 194);
+}
+
+.wallet_section:hover{
+    scrollbar-color: gray rgb(207, 202, 194);
+    scroll-behavior: smooth;
+    transition:ease-in .25s; 
+}
+
+.wallet_section img{ width: 60px; }
+
+.mY_wallet_add{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mY_wallet_add > p{ 
+    margin: 0 0 40px;
+    font-size: larger;
+}
+.mY_wallet_add > img{ 
+    width: 30px;
+    margin:0  0 40px;
+}
+.added_wallets:hover{ border: 2px solid blue }
+
+.added_wallets{
+    background-color: #fff;
+    height: 140px;
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    border: 1px solid grey;
+    border-radius: 5px;   
+}
+
+.added_wallets > .card-number{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    
+}
+.transaction_section{
+    background-color: #fff;
+    padding: 30px 50px;
+}
+.currentBalance{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currentBalance > h2, .currentBalance > p{ margin: 0 0 40px; }
+.currentBalance .currentBalanceHeading{font-size: 1.3rem; }
+
+.transaction_section{
+    overflow: auto;
+    scrollbar-color: white white;
+}
+.transaction_section:hover{
+    scrollbar-color: gray white;
+    scroll-behavior: smooth;
+    transition:ease-in .25s; 
+}
+.individual_transaction{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transaction_history{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 5px;
+    justify-content: space-between;
+    margin: 5px auto;
+    align-items: center;
+}
+.transaction_description p{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+div.amount{
+    font-weight: 900;
+    color: rgb(111, 0, 255);
+}
+div.Funds-added-amount{ color: rgb(9, 204, 9);}
+
+.individual_transaction img{
+    margin-right: 20px;
+    border: 1px solid gray;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
